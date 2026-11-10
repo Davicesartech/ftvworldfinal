@@ -8,7 +8,7 @@ const LS=mk('localStorage'),SS=mk('sessionStorage');
 
 /* ===== Config e utilitários ===== */
 // Endereço da API Flask. Em produção troque por 'https://seu-servidor.com/api'.
-const API_CONFIG = { baseUrl: 'http://127.0.0.1:5000/api' };
+const API_URL = "https://ftvworldfinal.onrender.com";
 const NIVEIS = ['iniciante', 'intermediário', 'avançado'];
 const SEXOS = [['feminino', 'Feminino'], ['masculino', 'Masculino']];
 const GENEROS = [['masculino', 'Masculino'], ['feminino', 'Feminino'], ['misto', 'Misto']];   // tipo do campeonato: masculino só homens, feminino só mulheres, misto aceita os dois
