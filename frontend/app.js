@@ -45,7 +45,7 @@ function sha256(s) {   // reserva para contextos sem crypto.subtle: mesmo result
 /* ===== Camada de dados: fetch() para o backend Flask + tradução de nomes de campo ===== */
 // O backend usa nomes do banco (id_usuario1, vagas_total...). O front usa nomes curtos (j1, limite...).
 // MAPA liga os dois; os ids viram texto no front (os data-id do HTML são texto) e número ao voltar pro servidor.
-const BASE_URL = (API_CONFIG.baseUrl || 'http://127.0.0.1:5000/api').replace(/\/$/, '');
+const BASE_URL = "https://ftvworldfinal.onrender.com";
 const IDS = new Set(['id', 'dono', 'j1', 'j2', 'camp', 'dupla', 'quadra', 'a', 'b', 'venc', 'de', 'para', 'user']);
 const MAPA = {
   usuarios:     { rota: '/usuarios',     campos: { nasc: 'data_nascimento', videoUrl: 'video_url', criado: 'data_criacao', aceite: 'data_aceite_termos', hab: 'habilidades' } },
